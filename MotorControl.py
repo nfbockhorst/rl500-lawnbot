@@ -14,7 +14,7 @@
 import serial
 
 class MotorControl():
-	port = serial.Serial("/dev/ttyS0", baudrate = 9600, timeout = 30.0)
+	port = serial.Serial("/dev/ttyS0", baudrate = 9600, timeout = 1)
 	RTN = "\r\n"
 	
 	def forward(self, speed):
